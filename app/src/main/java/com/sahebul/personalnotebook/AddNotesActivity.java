@@ -33,7 +33,7 @@ public class AddNotesActivity extends AppCompatActivity {
         et_note_title = (EditText) findViewById(R.id.et_note_title);
         et_note = (EditText) findViewById(R.id.et_note);
         tv_lastupdate = findViewById(R.id.tv_date);
-        getActionBar().setTitle("Add Notes");
+        setTitle("Add Notes");
         Realm.init(this);
         RealmConfiguration config = new RealmConfiguration
                 .Builder()
